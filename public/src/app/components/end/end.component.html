@@ -1,0 +1,30 @@
+<div id = "subWrapper">
+<div id = "subHeader">
+
+<div id = "quote">
+<b>"{{quote.quote}}"</b>
+<br>
+<br>
+-{{ quote.author }}
+<br>
+<br>
+{{ quote.book }}
+<br>
+</div>
+</div>
+
+<div id = "win" *ngIf="win">
+
+	<h2 id = "status">Congratulations! You got it right!</h2>
+
+</div>
+
+<div id = "lose" *ngIf="!win">
+
+	<h2 id = "status">Sorry... your answer wasn't quite right.</h2>
+
+</div>
+
+<button id="startButton" [routerLink]="['/game']"> Play Again </button>
+
+</div>

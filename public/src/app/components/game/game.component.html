@@ -1,0 +1,60 @@
+<div id = "subWrapper">
+
+<button id= "quitButton" [routerLink]="['/game']"> Quit </button>
+
+<div id = "subHeader">
+ <h3>There are three hints that may help...</h3>
+    <b><p>Show Author will tell you the name of the author of the book from where the quote was taken.</p>
+     <p>Show Book will tell you the book's title.</p>
+     <p>Show Extra Hint will give some extra bit of information that may help you solve the puzzle.</p></b>
+</div>
+<br><br>
+<div id = "quote">
+
+<b>"{{ quoteEncoded }}"</b>
+
+</div>
+<br><br>
+
+<div id = "submission">
+	"<span *ngFor="let letter of quoteEncodedCopy">
+		<span *ngFor="let sym of punct">
+			<span *ngIf="letter == sym"> <b>{{letter}}</b></span></span>
+		<span *ngFor="let code of arrCrypto;index as i">
+			<span *ngIf="letter == code">
+			<b>{{ arrCryptoCopy[i] }}</b>
+	</span></span></span>"
+	<br><br>
+	<div id = "hintButtonBox">
+		<button class = "hintButton" (click) ="showAuthor = true">HINT: Show Author</button>
+		<button class = "hintButton" (click) ="showBook = true"> HINT: Show Book</button>
+		<button class = "hintButton" (click) ="showFact = true"> HINT: Show Extra Hint</button>
+	</div>
+
+	<br><br>
+
+	<div id = "key">
+		<form (submit)="decrypt()">
+
+			<table id = "cypher">
+				<tr><th>Code: Key:</th><td *ngFor="let code of arrCrypto;index as i">{{ arrCrypto[i] }} <input type="text" name="arrCryptoCopy[i]" [(ngModel)]="arrCryptoCopy[i]" maxlength="1" /></td></tr>
+			</table>
+			<button id = "submitButton">Submit Answer</button>
+		</form>
+	</div>
+
+	<div id = "hints">
+		<p *ngIf="showAuthor == true"> Author: {{ quote.author }} </p>
+
+		<p *ngIf="showBook == true"> Book: {{ quote.book }} </p>
+
+		<p *ngIf="showFact == true"> {{ quote.fact }} </p>
+	</div>
+
+	<div id= "messages" *ngIf= "message.length > 0">
+		{{message}}
+	</div>
+
+</div>
+
+</div>

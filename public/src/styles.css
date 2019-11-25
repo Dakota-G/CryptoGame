@@ -1,0 +1,166 @@
+#superWrapper{
+	background-image: url('../static/BG2.jpg');
+	background-size: cover;
+	border: 2px solid grey;
+
+}
+
+#superHeader{
+/*	background-image: url('../static/BG.jpg')*/;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-indent: 5%;
+	padding: 3px;
+}
+
+	#title{
+		color: black;
+		text-indent: 10%;
+		font-size: 2.5em;
+		margin-left: 10px;
+		border-radius: 20px;
+		width: 20%;
+
+	}
+
+	#subTitle{
+		color: black;
+		font-style: italic;
+		text-decoration: overline;
+	}
+
+	#startButton{
+		background-color: green;
+		font-size: 1.5em;
+		border-radius: 10px;
+		color: snow;
+		margin: 5px;
+	}
+	#startButton:hover{
+		background-color: seagreen;
+		color: goldenrod;
+	}
+	#startButton:active{
+		background-color: darkgreen;
+		box-shadow: 0px -2px black;
+		transform: translateY(2px);
+	}
+
+.subHeader{
+
+}
+
+	#quitButton{
+				background-color: tomato;
+				font-size: 1.2em;
+				border-radius: 10px;
+				color: snow;
+				margin: 7px;
+				margin-left: 80%;
+				border: 1px dotted white;
+				box-shadow: 0px 1px black;
+			}
+	#quitButton:hover{
+				background-color: red;
+			}
+	#quitButton:active{
+				background-color: maroon;
+				box-shadow: 0px -2px black;
+				transform: translateY(2px);
+			}
+.subWrapper{
+	background-image: url('../static/BG2.jpg');
+	padding: 5px;
+	margin-top: 5px;
+	text-indent: 10px;
+}
+
+	#quote{
+		margin-left: 10px;
+		font-size: 1.7em;
+	}
+
+	#submission{
+		margin-left: 10px;
+		font-size: 1.7em;
+		color: darkgreen;
+	}
+		#hintButtonBox{
+			margin-left: 25px;
+		}
+			.hintButton{
+				background-color: lemonchiffon;
+				font-size: .6em;
+				border-radius: 10px;
+				color: red;
+				font-style: italic;
+				margin-right: 100px;
+				border: .5px dotted red;
+				box-shadow: 0px 1px black;
+			}
+			.hintButton:hover{
+				background-color: gold;
+			}
+			.hintButton:active{
+				background-color: yellow;
+				box-shadow: 0px -2px black;
+				transform: translateY(2px);
+			}
+		
+		#key{
+			margin-left: 25px;
+		}
+		
+		#cypher{
+
+		}
+		td{
+			width: 50px;
+			border: 1px solid black;
+			text-align: center;
+		}
+		th{
+			text-align: center;
+			width: 50px;
+			border: 1px solid black;
+			margin-right: 5px;
+		}
+		input{
+			width: 48px;
+			font-size: 1em;
+			text-align: center;
+		}
+
+	#submitButton{
+		background-color: seagreen;
+		font-size: 1.2em;
+		border-radius: 10px;
+		color: snow;
+		margin: 10px;
+	}
+	#submitButton:hover{
+		background-color: green;
+		color: white;
+	}
+	#submitButton:active{
+		background-color: darkgreen;
+		box-shadow: 0px -2px black;
+		transform: translateY(2px);
+	}
+
+	#hints{
+		vertical-align: top;
+		color: maroon;
+		font-style: italic;
+		font-weight: bold;
+	}
+
+	#key{
+		display: inline-block;
+	}
+
+#status{
+	font-size: 2em;
+	color: darkgreen;
+	margin-left: 25px;
+}
